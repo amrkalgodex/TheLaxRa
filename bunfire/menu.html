@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Menu — Bunfire</title>
+  <meta name="description" content="What is stacked inside every Bunfire burger. Built to order, collected in about 15 minutes.">
+  <meta name="theme-color" content="#fcfaf6">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="wrap inner">
+      <a class="brand" href="index.html"><span class="mark">B</span>Bunfire</a>
+      <nav class="nav" aria-label="Main">
+        <a class="link" href="index.html#lineup">Menu</a>
+        <a class="link" href="index.html#visit">Visit</a>
+        <button class="bag-btn" type="button" data-open-bag aria-label="Open bag">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M6 7h12l1.2 13H4.8L6 7Z"/><path d="M9 7a3 3 0 0 1 6 0"/>
+          </svg>
+          <span>Bag</span>
+          <span class="count" data-bag-count>0</span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="product-page">
+    <div class="wrap" id="product">
+      <p class="empty-state">Loading the menu…</p>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="foot-grid">
+        <div>
+          <a class="brand" href="index.html"><span class="mark">B</span>Bunfire</a>
+          <p class="foot-tag">Smashed to order on a screaming-hot plancha. Never frozen, never rushed, never boring.</p>
+        </div>
+        <div>
+          <h3>Kitchen hours</h3>
+          <p>Mon – Thu · 12:00 – 23:00<br>Fri – Sun · 12:00 – 01:00</p>
+        </div>
+        <div>
+          <h3>Find us</h3>
+          <p>14 Char Lane, Bandra West<br>Pickup ready in ~15 minutes</p>
+        </div>
+      </div>
+      <div class="foot-bottom">
+        <p>&copy; 2026 Bunfire — prices in INR, taxes included.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/data.js"></script>
+  <script src="assets/app.js"></script>
+</body>
+</html>

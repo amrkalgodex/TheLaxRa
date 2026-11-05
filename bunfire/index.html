@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bunfire — Ultra Level Burgers</title>
+  <meta name="description" content="Six smashed burgers, aged beef and brioche toasted in beef fat. Order for delivery or pick up in 15 minutes.">
+  <meta name="theme-color" content="#fcfaf6">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="wrap inner">
+      <a class="brand" href="index.html"><span class="mark">B</span>Bunfire</a>
+      <nav class="nav" aria-label="Main">
+        <a class="link" href="#lineup">Menu</a>
+        <a class="link" href="#visit">Visit</a>
+        <button class="bag-btn" type="button" data-open-bag aria-label="Open bag">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M6 7h12l1.2 13H4.8L6 7Z"/><path d="M9 7a3 3 0 0 1 6 0"/>
+          </svg>
+          <span>Bag</span>
+          <span class="count" data-bag-count>0</span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <p class="kicker"><span class="dot"></span>Smashed to order · 12 min</p>
+          <h1 class="display">The burger you'll judge every other <em>burger</em> by.</h1>
+          <p class="lede">Aged beef, brioche toasted in beef fat, and a plancha that never drops below screaming. Pick your champion from the lineup below.</p>
+          <div class="hero-actions">
+            <a class="btn-primary" href="#lineup">
+              See the lineup
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M5 12h14"/><path d="m13 6 6 6-6 6"/>
+              </svg>
+            </a>
+            <p class="hero-aside"><strong>Delivery or pickup</strong><br>Collection in about 15 minutes</p>
+          </div>
+          <dl class="stats">
+            <div><dt>6</dt><dd>Burgers</dd></div>
+            <div><dt>100%</dt><dd>Fresh beef</dd></div>
+            <div><dt>4.9</dt><dd>Kitchen rating</dd></div>
+          </dl>
+        </div>
+
+        <div class="hero-media">
+          <img src="assets/images/d85c0964e.jpg" alt="Signature triple smash burger held in two hands" width="900" height="1125">
+          <div class="hero-card">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="m12 3 2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1L3.2 9.5l6.1-.9L12 3Z"/>
+            </svg>
+            <div>
+              <strong>The Original Smash</strong>
+              <span>Most ordered this week</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="challenge-section">
+      <div class="wrap">
+        <div class="challenge">
+          <div class="challenge-copy">
+            <p class="pill">Free burger challenge</p>
+            <h2 class="display-2">Stop the clock on nine.</h2>
+            <p class="challenge-lede">Start the stopwatch, then hit stop at exactly <strong>9.00</strong> — hundredths and all. Nail it and your burger is on us.</p>
+            <ul class="rules">
+              <li>One free burger per winning code</li>
+              <li>Code must be shown at the counter</li>
+              <li>Valid on the day you win it</li>
+            </ul>
+          </div>
+
+          <div class="timer-card" id="stopwatch">
+            <p class="timer-label">Your stopwatch</p>
+            <p class="timer-readout" role="timer" aria-live="off">
+              <span id="sw-seconds">0</span><span class="sep">.</span><span id="sw-hundredths">00</span>
+            </p>
+            <p class="timer-target">Target · exactly 9.00</p>
+            <button class="btn-timer" id="sw-toggle" type="button">Start the clock</button>
+            <p class="timer-result" id="sw-result" hidden></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="lineup" id="lineup">
+      <div class="wrap">
+        <p class="eyebrow">The lineup</p>
+        <div class="lineup-head">
+          <h2 class="display-2">Choose your champion</h2>
+          <p class="lineup-lede">Every burger is built to order. Tap one to see what is stacked inside.</p>
+        </div>
+        <div class="filters" id="filters" role="tablist" aria-label="Filter the lineup"></div>
+        <div class="grid" id="lineup-grid"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="visit">
+    <div class="wrap">
+      <div class="foot-grid">
+        <div>
+          <a class="brand" href="index.html"><span class="mark">B</span>Bunfire</a>
+          <p class="foot-tag">Smashed to order on a screaming-hot plancha. Never frozen, never rushed, never boring.</p>
+        </div>
+        <div>
+          <h3>Kitchen hours</h3>
+          <p>Mon – Thu · 12:00 – 23:00<br>Fri – Sun · 12:00 – 01:00</p>
+        </div>
+        <div>
+          <h3>Find us</h3>
+          <p>14 Char Lane, Bandra West<br>Pickup ready in ~15 minutes</p>
+        </div>
+      </div>
+      <div class="foot-bottom">
+        <p>&copy; 2026 Bunfire — prices in INR, taxes included.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/data.js"></script>
+  <script src="assets/app.js"></script>
+</body>
+</html>
